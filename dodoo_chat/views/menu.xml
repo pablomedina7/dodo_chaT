@@ -1,0 +1,17 @@
+<!-- redirect/views/menu.xml -->
+<odoo>
+    <data>
+        <!-- Definición de la acción -->
+        <record id="action_redirect" model="ir.actions.act_url">
+            <field name="name">Dodoo_chat to Webpage</field>
+            <field name="url">http://127.0.0.1:5000</field>
+            <field name="target">new</field>
+        </record>
+
+        <!-- Definición del menú -->
+        <menuitem id="menu_redirect_root"
+                  name="Dodoo_chat"
+                  sequence="10"
+                  action="action_redirect"/>
+    </data>
+</odoo>
